@@ -127,10 +127,12 @@ const UIcontroller = (function() {
             
             const detailDiv = document.querySelector(DOMElements.divSongDetail);
             detailDiv.innerHTML = '';
-            const html = '<div class=”row col-sm-12 px-0”> <img src=”{img}” alt=””> </div>  <div class=”row col-sm-12 px-0”><label for=”Genre” class=”form-label col-sm-12”>${title}:</label> </div> <div class=”row col-sm-12 px-0”> <label for=”artist” class=”form-label col-sm-12”>${artist}:</label> </div>';
+            const html = `
+            <div class=”row col-sm-12 px-0”> <img src=”{img}” alt=””> </div> 
+             <div class=”row col-sm-12 px-0”><label for=”Genre” class=”form-label col-sm-12”>${title}:</label> </div> 
+            <div class=”row col-sm-12 px-0”> <label for=”artist” class=”form-label col-sm-12”>${artist}:</label> </div>
+            `;
            
-            
-         
             detailDiv.insertAdjacentHTML('beforeend',html)
 
         },
